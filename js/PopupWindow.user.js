@@ -96,6 +96,7 @@
 				transition: 1s;\
 			"));
 			$.css([HtmlFrameContent.querySelector('#HtmlFrameContent-delete')],cssToObj("\
+				z-index: 10000000;\
 				position: absolute;\
 				top: 0;right: 0;\
 			"));
