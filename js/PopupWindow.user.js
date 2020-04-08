@@ -2,6 +2,7 @@
 // @name         弹窗
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0.1
+// @match        http://*/*
 // @description  在当前页面展示一个弹窗
 // @author       YiJie
 // ==/UserScript==
