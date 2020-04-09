@@ -46,6 +46,7 @@
 		generateWrapperMask(maskColor) {
 			const mask = $.create('<div pw-class="WrapperMask"></div>');
 			$.css([mask],cssToObj("\
+			z-index:10000000000;\
 			position:fixed;\
 			top: 0;left: 0;\
 			width: 100%;height: 100%;\
