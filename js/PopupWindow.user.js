@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         弹窗
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0.1
+// @version      1.0.0.2
 // @match        http://*/*
 // @description  在当前页面展示一个弹窗
 // @author       YiJie
@@ -46,7 +46,7 @@
 		generateWrapperMask(maskColor) {
 			const mask = $.create('<div pw-class="WrapperMask"></div>');
 			$.css([mask],cssToObj("\
-			z-index:10000000000;\
+			z-index:1000;\
 			position:fixed;\
 			top: 0;left: 0;\
 			width: 100%;height: 100%;\
@@ -97,7 +97,7 @@
 				transition: 1s;\
 			"));
 			$.css([HtmlFrameContent.querySelector('#HtmlFrameContent-delete')],cssToObj("\
-				z-index: 10000000;\
+				z-index: 1000;\
 				position: absolute;\
 				top: 0;right: 0;\
 			"));
